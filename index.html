@@ -1,31 +1,37 @@
 <!doctype html>
 <html>
 <head>
+<meta name="description" content="柚看" />
 <meta charset="utf-8">
-<meta name="description" content="" />
-<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="telephone=no"/> 
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<title>柚看</title>
+<link type="text/css" rel="stylesheet" href="css/css.css">
 </head>
-<style>
-  *{padding:0;margin:0;}
-  .pic{width:48%;height:auto;margin:auto;margin-top:60px;}
-  .pic img{display:block;width:100%;}
-  .txt{width:100%;text-align:center;margin-top:40px;} 
-  .txt p{font-size:16px;color:#333;text-align:center;width:100%;line-height:24px;}
-  .button{width:100%;height:auto;margin-top:50px;}
-  .button button{width:57%;height:auto;margin:auto;margin-bottom:10px;display:block;border:0;background:none;}
-  .button button img{width:100%}
-</style>
-<body style="background:#fff;">
-  <div class="pic"><img src="images/pic.jpg"></div>
-  <div class="txt" style="display:none;">
-    <p>官网设计中</p>
-    <p style="font-size:13px;">敬请期待</p>
+
+<body>
+<section class="page1" id="page1">
+  <div class="page1Top" id="page1Top"><img src="images/hand_phone.png"></div>
+  <div class="page1Bottom">
+    <h2>柚看</h2>
+    <p>支持全景VR和3D电影的娱乐平台</p>
+    <button onClick="window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=com.youseevr.yousee'">立即下载</button>
+    <div class="bottomPic"><img src="images/bg_plane.jpg"></div>
   </div>
-  <div class="button">
-    <button><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.youseevr.yousee"><img src="images/iosButton.jpg"></a></button>
-    <button><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.youseevr.yousee"><img src="images/androidButton.jpg"></a></button>
-  </div>
+</section>
+<section class="page2">
+  <div class="page2Pic1"><img src="images/indexCon.jpg"></div>
+  <div class="page2Pic2"><img src="images/bottom1.jpg"></div>
+</section>
+<section class="pageBottom">
+  <h2>柚看V1.0</h2>
+  <p><span>深圳柚看科技有限公司</span><span>联系邮箱：290907999@qq.com</span></p>
+</section>
+<script>
+ window.onload=function(){
+	 document.getElementById("page1Top").setAttribute("class","page1Top imgMove");
+	 }
+ var pageHeight=document.documentElement.clientHeight
+ document.getElementById("page1").style.height=pageHeight+"px";
+</script>
 </body>
 </html>
